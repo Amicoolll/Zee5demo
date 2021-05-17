@@ -1,0 +1,6 @@
+framework module Pods_Zee5Demo {
+  umbrella header "Pods-Zee5Demo-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38F7E5E1432593DCBC0AAF6A /* Pods_Zee5Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB58ECC351624EF9AF34D1A /* Pods_Zee5Demo.framework */; };
+		84D43CD6264D952900F8885A /* ImagesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D43CD5264D952900F8885A /* ImagesProtocols.swift */; };
+		84D43CDA264D964000F8885A /* ImagesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D43CD9264D964000F8885A /* ImagesModel.swift */; };
+		84D43CE0264D9FF300F8885A /* ImagesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D43CDF264D9FF300F8885A /* ImagesPresenter.swift */; };
+		84D43CE4264DA6F000F8885A /* ImageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D43CE3264DA6F000F8885A /* ImageRouter.swift */; };
+		84D43CF6264DABDA00F8885A /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D43CF5264DABDA00F8885A /* AppConstants.swift */; };
+		84F1C681264AF74500B94F22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1C680264AF74500B94F22 /* AppDelegate.swift */; };
+		84F1C683264AF74500B94F22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1C682264AF74500B94F22 /* SceneDelegate.swift */; };
+		84F1C688264AF74500B94F22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F1C686264AF74500B94F22 /* Main.storyboard */; };
+		84F1C68A264AF74700B94F22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F1C689264AF74700B94F22 /* Assets.xcassets */; };
+		84F1C68D264AF74700B94F22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F1C68B264AF74700B94F22 /* LaunchScreen.storyboard */; };
+		84F1C69E264B0C5A00B94F22 /* SearchImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1C69D264B0C5A00B94F22 /* SearchImages.swift */; };
+		84F1C6A2264B0F3D00B94F22 /* dashboard.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84F1C6A1264B0F3D00B94F22 /* dashboard.jpg */; };
+		84F1C6A6264B12BB00B94F22 /* Imagedetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1C6A5264B12BB00B94F22 /* Imagedetail.swift */; };
+		84F65CB5264B1FDD0032ACE6 /* ImagesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F65CB4264B1FDD0032ACE6 /* ImagesInteractor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5BB58ECC351624EF9AF34D1A /* Pods_Zee5Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zee5Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D43CD5264D952900F8885A /* ImagesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesProtocols.swift; sourceTree = "<group>"; };
+		84D43CD9264D964000F8885A /* ImagesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesModel.swift; sourceTree = "<group>"; };
+		84D43CDF264D9FF300F8885A /* ImagesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesPresenter.swift; sourceTree = "<group>"; };
+		84D43CE3264DA6F000F8885A /* ImageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRouter.swift; sourceTree = "<group>"; };
+		84D43CF5264DABDA00F8885A /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		84F1C67D264AF74500B94F22 /* Zee5Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zee5Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F1C680264AF74500B94F22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84F1C682264AF74500B94F22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		84F1C687264AF74500B94F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84F1C689264AF74700B94F22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84F1C68C264AF74700B94F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84F1C68E264AF74700B94F22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F1C69D264B0C5A00B94F22 /* SearchImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchImages.swift; sourceTree = "<group>"; };
+		84F1C6A1264B0F3D00B94F22 /* dashboard.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dashboard.jpg; sourceTree = "<group>"; };
+		84F1C6A5264B12BB00B94F22 /* Imagedetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imagedetail.swift; sourceTree = "<group>"; };
+		84F65CB4264B1FDD0032ACE6 /* ImagesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesInteractor.swift; sourceTree = "<group>"; };
+		A01BB59F328AA14796034D87 /* Pods-Zee5Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zee5Demo.release.xcconfig"; path = "Target Support Files/Pods-Zee5Demo/Pods-Zee5Demo.release.xcconfig"; sourceTree = "<group>"; };
+		D87195ABE63B9CC82C5A5600 /* Pods-Zee5Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zee5Demo.debug.xcconfig"; path = "Target Support Files/Pods-Zee5Demo/Pods-Zee5Demo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84F1C67A264AF74500B94F22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38F7E5E1432593DCBC0AAF6A /* Pods_Zee5Demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		077458D430BA9FE4382643FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BB58ECC351624EF9AF34D1A /* Pods_Zee5Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6613B3AD8046E1DB343C6C3A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D87195ABE63B9CC82C5A5600 /* Pods-Zee5Demo.debug.xcconfig */,
+				A01BB59F328AA14796034D87 /* Pods-Zee5Demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		84D43CD4264D950400F8885A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				84D43CD5264D952900F8885A /* ImagesProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		84D43CD8264D962500F8885A /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				84D43CD9264D964000F8885A /* ImagesModel.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		84D43CDE264D9FD500F8885A /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				84D43CDF264D9FF300F8885A /* ImagesPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		84D43CE2264DA6B900F8885A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				84D43CE3264DA6F000F8885A /* ImageRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		84D43CE6264DAAF600F8885A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				84F1C6A1264B0F3D00B94F22 /* dashboard.jpg */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		84D43CF4264DABDA00F8885A /* App Constants */ = {
+			isa = PBXGroup;
+			children = (
+				84D43CF5264DABDA00F8885A /* AppConstants.swift */,
+			);
+			path = "App Constants";
+			sourceTree = "<group>";
+		};
+		84F1C674264AF74500B94F22 = {
+			isa = PBXGroup;
+			children = (
+				84F1C67F264AF74500B94F22 /* Zee5Demo */,
+				84F1C67E264AF74500B94F22 /* Products */,
+				6613B3AD8046E1DB343C6C3A /* Pods */,
+				077458D430BA9FE4382643FB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84F1C67E264AF74500B94F22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84F1C67D264AF74500B94F22 /* Zee5Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84F1C67F264AF74500B94F22 /* Zee5Demo */ = {
+			isa = PBXGroup;
+			children = (
+				84F1C680264AF74500B94F22 /* AppDelegate.swift */,
+				84F1C682264AF74500B94F22 /* SceneDelegate.swift */,
+				84F1C686264AF74500B94F22 /* Main.storyboard */,
+				84D43CD4264D950400F8885A /* Protocols */,
+				84F1C6A4264B127E00B94F22 /* View */,
+				84F65CB3264B1FA90032ACE6 /* Interactor */,
+				84D43CDE264D9FD500F8885A /* presenter */,
+				84D43CD8264D962500F8885A /* entity */,
+				84D43CE2264DA6B900F8885A /* Router */,
+				84D43CF4264DABDA00F8885A /* App Constants */,
+				84D43CE6264DAAF600F8885A /* Helpers */,
+				84F1C689264AF74700B94F22 /* Assets.xcassets */,
+				84F1C68B264AF74700B94F22 /* LaunchScreen.storyboard */,
+				84F1C68E264AF74700B94F22 /* Info.plist */,
+			);
+			path = Zee5Demo;
+			sourceTree = "<group>";
+		};
+		84F1C6A4264B127E00B94F22 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84F1C69D264B0C5A00B94F22 /* SearchImages.swift */,
+				84F1C6A5264B12BB00B94F22 /* Imagedetail.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84F65CB3264B1FA90032ACE6 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				84F65CB4264B1FDD0032ACE6 /* ImagesInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84F1C67C264AF74500B94F22 /* Zee5Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F1C691264AF74700B94F22 /* Build configuration list for PBXNativeTarget "Zee5Demo" */;
+			buildPhases = (
+				E5738FD853B8FFE6839650B5 /* [CP] Check Pods Manifest.lock */,
+				84F1C679264AF74500B94F22 /* Sources */,
+				84F1C67A264AF74500B94F22 /* Frameworks */,
+				84F1C67B264AF74500B94F22 /* Resources */,
+				2F4F2D6473037D0336F7FF5C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zee5Demo;
+			productName = Zee5Demo;
+			productReference = 84F1C67D264AF74500B94F22 /* Zee5Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84F1C675264AF74500B94F22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					84F1C67C264AF74500B94F22 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 84F1C678264AF74500B94F22 /* Build configuration list for PBXProject "Zee5Demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84F1C674264AF74500B94F22;
+			productRefGroup = 84F1C67E264AF74500B94F22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84F1C67C264AF74500B94F22 /* Zee5Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84F1C67B264AF74500B94F22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F1C6A2264B0F3D00B94F22 /* dashboard.jpg in Resources */,
+				84F1C68D264AF74700B94F22 /* LaunchScreen.storyboard in Resources */,
+				84F1C68A264AF74700B94F22 /* Assets.xcassets in Resources */,
+				84F1C688264AF74500B94F22 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F4F2D6473037D0336F7FF5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zee5Demo/Pods-Zee5Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zee5Demo/Pods-Zee5Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Zee5Demo/Pods-Zee5Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5738FD853B8FFE6839650B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zee5Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84F1C679264AF74500B94F22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F1C681264AF74500B94F22 /* AppDelegate.swift in Sources */,
+				84D43CDA264D964000F8885A /* ImagesModel.swift in Sources */,
+				84F1C69E264B0C5A00B94F22 /* SearchImages.swift in Sources */,
+				84D43CF6264DABDA00F8885A /* AppConstants.swift in Sources */,
+				84F65CB5264B1FDD0032ACE6 /* ImagesInteractor.swift in Sources */,
+				84D43CD6264D952900F8885A /* ImagesProtocols.swift in Sources */,
+				84F1C6A6264B12BB00B94F22 /* Imagedetail.swift in Sources */,
+				84D43CE0264D9FF300F8885A /* ImagesPresenter.swift in Sources */,
+				84F1C683264AF74500B94F22 /* SceneDelegate.swift in Sources */,
+				84D43CE4264DA6F000F8885A /* ImageRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84F1C686264AF74500B94F22 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F1C687264AF74500B94F22 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84F1C68B264AF74700B94F22 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F1C68C264AF74700B94F22 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84F1C68F264AF74700B94F22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84F1C690264AF74700B94F22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84F1C692264AF74700B94F22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D87195ABE63B9CC82C5A5600 /* Pods-Zee5Demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Zee5Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.com.Zee5Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84F1C693264AF74700B94F22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A01BB59F328AA14796034D87 /* Pods-Zee5Demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Zee5Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.com.Zee5Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84F1C678264AF74500B94F22 /* Build configuration list for PBXProject "Zee5Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F1C68F264AF74700B94F22 /* Debug */,
+				84F1C690264AF74700B94F22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F1C691264AF74700B94F22 /* Build configuration list for PBXNativeTarget "Zee5Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F1C692264AF74700B94F22 /* Debug */,
+				84F1C693264AF74700B94F22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84F1C675264AF74500B94F22 /* Project object */;
+}
